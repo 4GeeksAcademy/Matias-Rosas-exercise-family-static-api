@@ -14,19 +14,19 @@ class FamilyStructure:
 
         # example list of members
         self._members = [{
-            'id': self._generateId(),
+            'id': 95242438,
             'first_name': 'John',
             'age': 33,
             'lucky_numbers': [7,13,22]
         },
         {
-            'id': self._generateId(),
+            'id': 17397551,
             'first_name': 'Jane',
             'age': 35,
             'lucky_numbers': [10,14,3]
         },
         {
-            'id': self._generateId(),
+            'id': 78346900,
             'first_name': 'Jimmy',
             'age': 5,
             'lucky_numbers': [1]
@@ -53,10 +53,9 @@ class FamilyStructure:
     def get_member(self, id):
         # fill this method and update the return
         for member in self._members:
-            if member['id'] == id:
-                selectedmember = member
-        return selectedmember
-
+            if member['id'] == int(id):
+                return member
+        return None
     # this method is done, it returns a list with all the family members
     def get_all_members(self):
         return self._members
